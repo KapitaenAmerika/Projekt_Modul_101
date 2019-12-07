@@ -1,0 +1,136 @@
+body{
+    overflow: hidden;
+}
+.nav{
+    display:flex;
+    flex-direction: row;
+    align-items: left;
+    background-color: black;
+    overflow: hidden;
+  }
+  .nav a{
+    color: #ff00ff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 16px;
+    display: block;
+    text-align: center;
+    float: left;
+  }
+  
+  .nav a:hover{
+    background-color: #3EB300;
+  }
+  
+  .nav {
+    list-style: none;
+  }
+  
+  body{
+    margin: 0;
+  }
+  .startseite{
+      background-color: #800080;
+  }
+  .img{
+      width: 100vw;
+      height: 100vh;
+  }
+  .Schriftgrösse h1{
+      font-size: 30px;
+      left: 10px;
+  }
+  .Schriftgrösse h4{
+      font-size: 20px;
+      left: 10px;
+  }
+  .Schriftgrösse a{
+    font-size: 20px;
+    text-decoration: none;
+    left: 10px;
+}
+.Schriftgrösse {
+    font-size: 20px;
+    text-decoration: none;
+    left: 10px;
+}
+.Hintergrundgames{
+    background: linear-gradient(90deg,#63E678, #6EFF86, #53C266);
+}
+.center{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.colorblack a{
+    color:black;
+}
+.schrift {
+    font-size: 17px;
+}
+.imggames1{
+    position: absolute;
+    bottom: 0;
+    right: 1vw;
+    width: 300px;
+}
+.imghobbys{
+    position: absolute;
+    bottom: 3vw;
+    left: 20px;
+    width: 500px;
+}
+.responsivenav .barcontainer {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #E8D4D0;
+    margin: 6px 0px;
+    transition: 0.2s;
+  }
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+ .change  .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: rotate(45deg) translate(-9px, -6px);
+  }
+  @media screen and (max-width: 600px) {
+    .responsivenav a:not(:first-child) {
+      display: none;
+    }
+  
+    .responsivenav .barcontainer {
+      float: right;
+      display: block;
+    }
+  
+    .responsivenav.responsive {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .responsivenav.responsive .barcontainer {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+  
+    .responsivenav.responsive a {
+        float: none;
+        display: block;
+    }
+  }
